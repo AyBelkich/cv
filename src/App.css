@@ -1,0 +1,357 @@
+:root {
+  /* Rocket League-ish palette (subtle) */
+  --bg-dark: #06121d;
+
+  /* Glass cards */
+  --card: rgba(10, 18, 28, 0.78);
+  --card-strong: rgba(10, 18, 28, 0.88);
+
+  --text: #e5e7eb;
+  --muted: rgba(229, 231, 235, 0.72);
+  --border: rgba(255, 255, 255, 0.14);
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  --radius: 16px;
+
+  --rl-blue: #1d4ed8;
+  --rl-orange: #f97316;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: var(--text);
+  line-height: 1.55;
+
+  background-color: var(--bg-dark);
+  background-image:
+    url("/rl-bg.jpg"),
+    radial-gradient(circle at 18% 12%, rgba(29, 78, 216, 0.18), transparent 45%),
+    radial-gradient(circle at 82% 18%, rgba(249, 115, 22, 0.16), transparent 45%),
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 2px,
+      transparent 2px,
+      transparent 16px
+    );
+
+  background-size: cover, cover, cover, auto;
+  background-position: center, center, center, center;
+  background-attachment: fixed, fixed, fixed, fixed;
+  background-blend-mode: overlay, normal, normal, normal;
+}
+
+/* Dark overlay to reduce contrast spikes */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 8, 14, 0.55);
+  pointer-events: none;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* Center container */
+.page {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 34px 16px 46px;
+}
+
+/* Header card */
+.header {
+  text-align: center;
+  border: 1px solid var(--border);
+  background: var(--card-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 20px;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Blue/orange bar */
+.header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--rl-blue), var(--rl-orange));
+  opacity: 0.85;
+}
+
+.name {
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: 0.2px;
+}
+
+.title {
+  margin: 6px 0 14px;
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+/* Meta pills */
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+.meta span {
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 9px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.links a:hover {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+/* Button that matches the links */
+.linkBtn {
+  cursor: pointer;
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 9px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  font: inherit;
+}
+
+.linkBtn:hover {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+/* Grid */
+.grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle angled “speed plate” */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -90px;
+  width: 220px;
+  height: 160px;
+  background: rgba(255, 255, 255, 0.05);
+  transform: rotate(18deg);
+  border-radius: 24px;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* Items */
+.item {
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.item:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.itemTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.project {
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.project:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.project ul,
+.card ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: rgba(229, 231, 235, 0.82);
+}
+
+/* Skills */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.skillBlock {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.footnote {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 18px;
+  text-align: center;
+  color: rgba(229, 231, 235, 0.65);
+  font-size: 13px;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  background: rgba(10, 18, 28, 0.92);
+  color: #e5e7eb;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 10px 14px;
+  border-radius: 12px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.35);
+  z-index: 9999;
+}
+
+/* Responsive */
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .span2 {
+    grid-column: span 2;
+  }
+  .skillsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* PRINT / PDF mode */
+@media print {
+  body {
+    background: white !important;
+  }
+
+  body::before {
+    display: none !important;
+  }
+
+  .toast {
+    display: none !important;
+  }
+
+  .links {
+    display: none !important; /* hide buttons on PDF */
+  }
+
+  .card,
+  .header {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+  }
+
+  .muted {
+    color: #444 !important;
+  }
+
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+}
