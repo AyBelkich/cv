@@ -160,7 +160,7 @@ cv/
 
 ---
 
-## ✅ Notes / Troubleshooting
+## ✅ Notes /Troubleshooting
 
 ### PDF not downloading?
 
