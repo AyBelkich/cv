@@ -15,9 +15,10 @@ export const cvData = {
 
   profile: `
     3e-jaars student <b>Bachelor Toegepaste Informatica</b> (Odisee – Campus Brussel) met sterke interesse in
-    <b>Cloud & DevOps</b>. Ik werk hands-on aan projecten met <b>AWS</b>, <b>Docker</b> en
-    <b>CI/CD (GitHub Actions)</b>. Gemotiveerd om tijdens een stage snel bij te leren en mee te draaien in een team
-    dat werkt aan deployment, automatisatie en infrastructuur.
+    <b>Cloud & DevOps</b>. Ik werk hands-on aan projecten met <b>AWS (EC2)</b>, <b>Terraform</b>, <b>Docker</b>,
+    <b>CI/CD (GitHub Actions)</b> en <b>CloudWatch</b> (alarms & logs).
+    Gemotiveerd om tijdens een stage snel bij te leren en mee te draaien in een team dat werkt aan deployment,
+    automatisatie en infrastructuur.
   `,
 
   education: {
@@ -29,7 +30,7 @@ export const cvData = {
   skills: [
     {
       group: "Cloud & DevOps",
-      items: ["AWS (EC2)", "Docker", "GitHub Actions", "Git", "GitHub"],
+      items: ["AWS (EC2)", "Terraform", "Docker", "GitHub Actions", "CloudWatch (Logs/Alarms)"],
     },
     {
       group: "Backend / Web",
@@ -58,9 +59,9 @@ export const cvData = {
       subtitle: "persoonlijk project (recent)",
       bullets: [
         "API gebouwd met FastAPI (Python)",
-        "GitHub Actions pipeline: tests → Docker image build → automatische deploy",
-        "Container deployment op AWS EC2 via SSH",
-        "Next: server provisioning + Docker setup automatiseren (start/stop, auto-deploy)",
+        "GitHub Actions pipeline: tests → Docker build/push → deploy naar EC2 via SSH",
+        "Infrastructure as Code met Terraform (EC2 + Security Group + IAM)",
+        "Observability: CloudWatch CPU alarm + container logs naar CloudWatch Logs",
       ],
     },
     {

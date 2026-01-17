@@ -26,16 +26,17 @@ CONTACT_LINE_2 = f"{EMAIL} • {GITHUB_TEXT}"
 
 PROFILE = (
     "3e-jaars student <b>Toegepaste Informatica</b> (Odisee – Campus Brussel) met focus op "
-    "<b>Cloud & DevOps</b>. Hands-on ervaring met <b>AWS (EC2)</b>, <b>Docker</b> en "
-    "<b>CI/CD (GitHub Actions)</b> via persoonlijke projecten. Leergierig en gemotiveerd om tijdens "
-    "een stage snel mee te draaien in een team rond deployment, automatisatie en infrastructuur."
+    "<b>Cloud & DevOps</b>. Hands-on ervaring met <b>AWS (EC2)</b>, <b>Terraform</b>, <b>Docker</b>, "
+    "<b>CI/CD (GitHub Actions)</b> en <b>CloudWatch</b> (alarms & logs) via persoonlijke projecten. "
+    "Leergierig en gemotiveerd om tijdens een stage snel mee te draaien in een team rond deployment, "
+    "automatisatie en infrastructuur."
 )
 
 EDU = "<b>Odisee Hogeschool (Campus Brussel)</b><br/>Bachelor Toegepaste Informatica — 3e jaar (2022 – heden)"
 
 # Compact skill rows (more readable than long paragraphs)
 SKILLS_ROWS = [
-    ("Cloud & DevOps", "AWS (EC2), Docker, GitHub Actions"),
+    ("Cloud & DevOps", "AWS (EC2), Terraform, Docker, GitHub Actions, CloudWatch"),
     ("Tools", "Git, GitHub, SSH"),
     ("Backend", "Python (FastAPI), TypeScript, JavaScript"),
     ("Extra", "Java, C#, PHP"),
@@ -46,9 +47,9 @@ SKILLS_ROWS = [
 
 PROJECTS = [
     ("<b>FastAPI API + CI/CD deploy naar AWS EC2</b> <span color='#4b5563'>(persoonlijk, recent)</span>", [
-        "GitHub Actions: tests → Docker build → deploy",
-        "Container deployment op AWS EC2 via SSH",
-        "Next: provisioning + server setup automatiseren",
+        "GitHub Actions: tests → Docker build/push → deploy (SSH)",
+        "Terraform IaC: EC2 + Security Group + IAM role",
+        "CloudWatch: CPU alarm + container logs naar Log Group",
     ]),
     ("<b>Laravel marketplace webapp (zoals Vinted)</b> <span color='#4b5563'>(school groepsproject)</span>", [
         "Laravel (PHP) + MySQL (phpMyAdmin)",
