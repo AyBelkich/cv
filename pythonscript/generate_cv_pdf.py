@@ -18,18 +18,17 @@ EMAIL = "ayoub.belkich@gmail.com"  # change if needed
 GITHUB_TEXT = "github.com/AyBelkich"
 GITHUB_URL = "https://github.com/AyBelkich"
 
-SUBTITLE = "Cloud / DevOps Intern • Bachelor Toegepaste Informatica (3e jaar)"
+SUBTITLE = "Cloud / Infrastructure / DevOps Intern • Bachelor Toegepaste Informatica (3e jaar)"
 
 # Better: split contact info into two lines (prevents ugly wraps)
 CONTACT_LINE_1 = f"Brussel • Rijbewijs B + eigen wagen • Beschikbaar: midden februari 2026 (± 3 maanden)"
 CONTACT_LINE_2 = f"{EMAIL} • {GITHUB_TEXT}"
 
 PROFILE = (
-    "3e-jaars student <b>Toegepaste Informatica</b> (Odisee – Campus Brussel) met focus op "
-    "<b>Cloud & DevOps</b>. Hands-on ervaring met <b>AWS (EC2)</b>, <b>Terraform</b>, <b>Docker</b>, "
-    "<b>CI/CD (GitHub Actions)</b> en <b>CloudWatch</b> (alarms & logs) via persoonlijke projecten. "
-    "Leergierig en gemotiveerd om tijdens een stage snel mee te draaien in een team rond deployment, "
-    "automatisatie en infrastructuur."
+    "3e-jaars student <b>Toegepaste Informatica</b> (Odisee – Campus Brussel) met brede interesse in "
+    "<b>cloud</b>, <b>DevOps</b>, <b>systeembeheer</b>, <b>netwerken</b> en <b>infrastructuur</b>. "
+    "Hands-on ervaring met automatisatie, deployment en het opzetten/beheren van omgevingen via persoonlijke projecten. "
+    "Leergierig en gemotiveerd om tijdens een stage snel mee te draaien in een team rond betrouwbare IT-diensten en infrastructuur."
 )
 
 EDU = "<b>Odisee Hogeschool (Campus Brussel)</b><br/>Bachelor Toegepaste Informatica — 3e jaar (2022 – heden)"

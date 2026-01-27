@@ -1,6 +1,6 @@
 export const cvData = {
   name: "Ayoub Belkich",
-  headline: "Cloud / DevOps Intern • Bachelor Toegepaste Informatica (3e jaar)",
+  headline: "Cloud / Infrastructure / DevOps Intern • Bachelor Toegepaste Informatica (3e jaar)",
 
   meta: [
     "📍 Brussel",
@@ -14,11 +14,10 @@ export const cvData = {
   email: "ayoub.belkich@gmail.com",
 
   profile: `
-    3e-jaars student <b>Bachelor Toegepaste Informatica</b> (Odisee – Campus Brussel) met sterke interesse in
-    <b>Cloud & DevOps</b>. Ik werk hands-on aan projecten met <b>AWS (EC2)</b>, <b>Terraform</b>, <b>Docker</b>,
-    <b>CI/CD (GitHub Actions)</b> en <b>CloudWatch</b> (alarms & logs).
-    Gemotiveerd om tijdens een stage snel bij te leren en mee te draaien in een team dat werkt aan deployment,
-    automatisatie en infrastructuur.
+    3e-jaars student <b>Bachelor Toegepaste Informatica</b> (Odisee – Campus Brussel) met brede interesse in
+    <b>cloud</b>, <b>DevOps</b>, <b>systeembeheer</b>, <b>netwerken</b> en <b>infrastructuur</b>.
+    Ik werk hands-on aan projecten rond automatisatie, deployment, monitoring en het opzetten/beheren van omgevingen.
+    Gemotiveerd om tijdens een stage snel bij te leren en mee te draaien in een team dat betrouwbare IT-diensten en infrastructuur bouwt.
   `,
 
   education: {
